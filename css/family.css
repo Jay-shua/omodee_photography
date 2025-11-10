@@ -1,0 +1,61 @@
+
+.famPhotos{
+    margin: 4% auto;
+    text-align: center;
+}
+
+.famPhotos h5{
+    color: #ff6d2e;
+    font-weight: bolder;
+    margin-bottom: 2%;
+}
+
+.famPhotos .row{
+    display: flex;
+    gap: 1%;
+}
+
+.famPhotos img{
+    width: 100%;
+    height: auto;
+}
+
+.famPhotos .col{
+    display: flex;
+}
+
+.famPhotos h5{
+    margin: 4% auto 0;
+}
+
+.standOut{
+    margin: 4% 0;
+    background-color: #d84d28;
+    color: #fff;
+    text-align: center;
+    padding: 2%;
+}
+
+.standOut p{
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+
+.lorem{
+    margin: 4%;
+}
+
+.lorem p{
+    padding: .7% 3%;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+@media (max-width:972px) {
+    .standOut p{
+        font-size: 120%;
+    }
+    .lorem p{
+        font-size: 110%;
+    }
+}

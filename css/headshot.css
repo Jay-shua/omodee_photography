@@ -1,0 +1,222 @@
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.headPhotography{
+	color: #ff632d;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.headText{
+	padding: 0% 9% 4%;
+	font-size: 1.3rem;
+	text-align: center;
+	font-weight: 300;
+}
+
+
+
+.honeycomb {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	margin-bottom: 10%;
+	transform: translateY(34.375px);
+}
+.honeycomb-cell {
+	flex: 0 1 250px;
+	max-width: 250px;
+	height: 137.5px;
+	margin: 65.4761904762px 12.5px 25px;
+	position: relative;
+	padding: 0.5em;
+	text-align: center;
+	z-index: 1;
+}
+.honeycomb-cell__title {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	hyphens: auto;
+	word-break: break-word;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.75em;
+	transition: opacity 350ms;
+}
+.honeycomb-cell__title > small {
+	font-weight: 300;
+	margin-top: 0.25em;
+}
+.honeycomb-cell__image {
+	object-fit: cover;
+	object-position: center;
+}
+.honeycomb-cell::before, .honeycomb-cell::after {
+	content: '';
+}
+.honeycomb-cell::before, .honeycomb-cell::after, .honeycomb-cell__image {
+	top: -50%;
+	left: 0;
+	width: 100%;
+	height: 200%;
+	display: block;
+	position: absolute;
+	clip-path: polygon(-41% 0,50% 91%, 141% 0);
+	--_m: radial-gradient(#d6483b 69%,#0000 70%) 84.5%/50%;
+    -webkit-mask-box-image: var(--_m);
+               mask-border: var(--_m);
+    outline-offset: -100vmax;
+	z-index: -1;
+}
+
+#heart{
+	clip-path: path("M 50 15 C 20 15 0 40 0 65 C 0 100 50 100 50 65 C 50 100 100 100 100 65 C 100 40 80 15 50 15 Z");
+}
+.honeycomb-cell::before {
+	background: #fff;
+	transform: scale(1.055);
+}
+.honeycomb-cell::after {
+	background: #fed5a4;
+	opacity: 0.5;
+	transition: opacity 350ms ease-in-out;
+}
+.honeycomb-cell:hover .honeycomb-cell__title {
+	opacity: 0;
+}
+.honeycomb-cell:hover::before {
+	background: #d84d28;
+}
+.honeycomb-cell:hover::after {
+	opacity: 0;
+}
+.honeycomb__placeholder {
+	display: none;
+	opacity: 0;
+	width: 250px;
+	margin: 0 12.5px;
+}
+@media (max-width: 550px) {
+	.honeycomb-cell {
+		margin: 81.25px 25px;
+	}
+}
+@media (min-width: 550px) and (max-width: 825px) {
+	.honeycomb-cell:nth-child(3n) {
+		margin-right: calc(50% - 125px);
+		margin-left: calc(50% - 125px);
+	}
+	.honeycomb__placeholder:nth-child(3n + 5) {
+		display: block;
+	}
+}
+@media (min-width: 825px) and (max-width: 1100px) {
+	.honeycomb-cell:nth-child(5n + 4) {
+		margin-left: calc(50% - 275px);
+	}
+	.honeycomb-cell:nth-child(5n + 5) {
+		margin-right: calc(50% - 275px);
+	}
+	.honeycomb__placeholder:nth-child(5n), .honeycomb__placeholder:nth-child(5n + 3) {
+		display: block;
+	}
+}
+@media (min-width: 1100px) {
+	.honeycomb-cell:nth-child(7n + 5) {
+		margin-left: calc(50% - 400px);
+	}
+	.honeycomb-cell:nth-child(7n + 7), .honeycomb-cell:nth-child(7n + 5):nth-last-child(2) {
+		margin-right: calc(50% - 400px);
+	}
+	.honeycomb__placeholder:nth-child(7n + 7), .honeycomb__placeholder:nth-child(7n + 9), .honeycomb__placeholder:nth-child(7n + 11) {
+		display: block;
+	}
+}
+
+
+/* Continue */
+.continue{
+    padding: 3% 7%;
+    background-color: #d84d28;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+		
+}
+
+.imgGallery{
+    margin: 3%;
+    vertical-align: center;
+    justify-content: center;
+}
+
+
+.imgGallery img{
+    width: 100%;
+    margin: auto;
+}
+
+.imgGallery div{
+    margin: auto 1%;
+}
+
+.brand-personality h3{
+	padding: 3%;
+}
+
+@media (max-width:992px) {
+	.headText{
+        font-size: 1rem;
+    }
+    .headPhotography{
+        font-size: 1.8rem;
+        padding: 1%;
+    }
+    .container{
+        width: 100%;
+    }
+    .container .row{
+        width: 100%;
+    }
+    .continue p,
+    .grey p{
+        font-size: 1.2rem;
+    }
+    .brand-personality h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:780px) {
+    .headPhotography{
+        font-size: 1.6rem;
+    }
+    .headText{
+        font-size: .9rem;
+    }
+    .continue p,
+    .grey p{
+        font-size: 1rem;
+    }
+    .brand-personality h3{
+        font-size: 1.3rem;
+    }
+}
+

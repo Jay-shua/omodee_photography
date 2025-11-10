@@ -1,0 +1,76 @@
+.personalHead{
+    text-align: center;
+    margin: 3% auto 2%;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.event{
+    margin: 0;
+    width: 100%;
+}
+.proPhotography{
+    margin: 6% 0 0;
+    
+}
+
+.proExplain,
+.eventPhotography{
+    margin: 3% 0;
+    padding: 4% 9% 3%;
+    background-color: #d5d5d5;
+}
+
+.eventPhotography{
+    margin-top: 0;
+}
+
+.proExplain h2,
+.eventPhotography h3{
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 2%;
+    color: #ff824d;
+}
+
+.proExplain p,
+.talk p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 3%;
+}
+
+.proExplain p:last-child,
+.talk p:last-child{
+    margin-bottom: 0;
+}
+
+.proPhotography .row{
+    margin: 3% 5%;
+    gap: 1%;
+}
+
+.proPhotography .row img{
+    width: 100%;
+}
+
+.eventPhotography{
+    padding: 4% 9%;
+}
+
+.imgGallery{
+    margin: 6%;
+    vertical-align: center;
+    justify-content: center;
+}
+
+
+.imgGallery img{
+    width: 100%;
+    margin: auto;
+}
+
+.imgGallery div{
+    margin: auto 1%;
+}
+

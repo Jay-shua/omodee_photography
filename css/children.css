@@ -1,0 +1,45 @@
+.childTalk{
+    background-image: url("../pic/Children/10.jpg");
+    min-height: 90vh;
+    background-size: cover;
+    margin: 0 0 2%;
+    padding: 4% 0;
+    background-position: right center;
+    display: flex;
+    align-items: center;
+}
+
+.childTalk .row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.coloring{
+    background-color: #e4e3e3cd;
+    padding: 5% 4% 7%;
+    opacity: .8;
+}
+
+.coloring h2{
+    margin-bottom: 5%;
+}
+
+.coloring p{
+    font-size: 1.1rem;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.imgGallery{
+    display: flex;
+    margin: 3%;
+    justify-content: center;
+}
+
+.imgGallery img{
+    margin: auto 5%;
+}

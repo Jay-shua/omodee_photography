@@ -1,0 +1,130 @@
+
+.titleText, 
+.color,
+.brand-personality h3{
+    text-align: center;
+}
+
+#title .row{
+    display: flex;
+    margin: 3%;
+}
+
+.color{
+    background-color: #d5d5d5;
+    padding: 2%;
+    margin: 3% auto 5%;
+}
+
+.conHeight{
+    margin: 4% auto;
+}
+
+.conHeight img,
+.col-md-2 img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.conHeight .img1,
+.img2{
+    margin: auto;
+}
+
+
+
+.img2{
+    padding: .5%;
+}
+
+
+.corporate{
+    background-color: #d5d5d5;
+    padding: 3%;
+    margin: 0 1.8%;
+}
+
+.corporate h3{
+    margin-bottom: 4%;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.corporateText{
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.brand-personality .row img{
+    padding: 2% 3%;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;   
+}
+
+.brand-personality h3{
+    color: #ff6d2e;
+    margin: 7% auto 2%;
+}
+
+.brand-personality .col-3{
+    display: flex;
+}
+
+@media (max-width: 972px) {
+    #title .row{
+        margin: auto;
+    }
+    .container{
+        margin: auto;
+    }
+    .corporate h3{
+        font-size: 1.4em;
+    }
+    .corporateText{
+        font-size: 1.1rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .corporate h3{
+        font-size: 1.4em;
+    }
+    .corporateText{
+        font-size: .9rem;
+        text-align: left;
+    }
+}
+@media (max-width:520px) {
+    .corporate h3{
+        font-size: 1.2rem;
+    }
+    .corporateText{
+        font-size: .75rem;
+        text-align: left;
+    }
+}
+
+@media (max-width:400px) {
+    .corporate h3{
+        font-size: 1.2em;
+    }
+    .corporateText{
+        font-size: .55rem;
+        text-align: left;
+    }
+}
+
+@media (max-width:320px) {
+    .corporate h3{
+        font-size: .9rem;
+    }
+    .corporateText{
+        margin-bottom: 0;
+    }
+}
+
